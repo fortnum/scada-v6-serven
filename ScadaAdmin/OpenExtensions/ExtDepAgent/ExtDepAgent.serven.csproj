@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <RootNamespace>Scada.Admin.Extensions.ExtDepAgent</RootNamespace>
+    <Version>6.0.0</Version>
+    <Authors>Mikhail Shiryaev</Authors>
+    <Company>Rapid Software LLC</Company>
+    <Product>Rapid SCADA</Product>
+    <Copyright>Copyright © 2023</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ScadaAgent\ScadaAgent\AgentClient\AgentClient.serven.csproj" />
+    <ProjectReference Include="..\..\ScadaAdmin\ScadaAdminCommon\ScadaAdminCommon.serven.csproj" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <None Update="Lang\ExtDepAgent.ru-RU.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Lang\ExtDepAgent.en-GB.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

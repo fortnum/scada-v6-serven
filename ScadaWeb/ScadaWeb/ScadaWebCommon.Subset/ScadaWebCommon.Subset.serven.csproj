@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <RootNamespace>Scada.Web</RootNamespace>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <Version>6.1.2</Version>
+    <Authors>Mikhail Shiryaev</Authors>
+    <Company>Rapid Software LLC</Company>
+    <Product>Rapid SCADA</Product>
+    <Copyright>Copyright © 2023</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\ScadaWebCommon\Config\DisplayOptions.cs" Link="Config\DisplayOptions.cs" />
+    <Compile Include="..\ScadaWebCommon\Config\GeneralOptions.cs" Link="Config\GeneralOptions.cs" />
+    <Compile Include="..\ScadaWebCommon\Config\LoginOptions.cs" Link="Config\LoginOptions.cs" />
+    <Compile Include="..\ScadaWebCommon\Config\PluginAssignment.cs" Link="Config\PluginAssignment.cs" />
+    <Compile Include="..\ScadaWebCommon\Config\WebConfig.cs" Link="Config\WebConfig.cs" />
+    <Compile Include="..\ScadaWebCommon\Plugins\PluginView.cs" Link="Plugins\PluginView.cs" />
+    <Compile Include="..\ScadaWebCommon\Plugins\PluginViewFactory.cs" Link="Plugins\PluginViewFactory.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ScadaCommon\ScadaCommon\ScadaCommon.serven.csproj" />
+  </ItemGroup>
+
+</Project>

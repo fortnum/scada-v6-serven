@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	  <RootNamespace>Scada.Agent.Engine</RootNamespace>
+	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
+	  <Product>Rapid SCADA</Product>
+	  <Company>Rapid Software LLC</Company>
+	  <Authors>Mikhail Shiryaev</Authors>
+	  <Copyright>Copyright © 2023</Copyright>
+    <Version>6.1.0</Version>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ScadaCommon\ScadaCommon\ScadaCommon.serven.csproj" />
+    <ProjectReference Include="..\ScadaAgentCommon\ScadaAgentCommon.serven.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <RootNamespace>Scada.Admin</RootNamespace>
+    <Version>6.1.0</Version>
+    <Authors>Mikhail Shiryaev</Authors>
+    <Company>Rapid Software LLC</Company>
+    <Product>Rapid SCADA</Product>
+    <Copyright>Copyright © 2023</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WinControl" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ScadaCommon\ScadaCommon.Forms\ScadaCommon.Forms.serven.csproj" />
+    <ProjectReference Include="..\..\..\ScadaComm\ScadaComm\ScadaCommCommon\ScadaCommCommon.serven.csproj" />
+    <ProjectReference Include="..\..\..\ScadaServer\ScadaServer\ScadaServerCommon\ScadaServerCommon.serven.csproj" />
+    <ProjectReference Include="..\..\..\ScadaWeb\ScadaWeb\ScadaWebCommon.Subset\ScadaWebCommon.Subset.serven.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Lang\ScadaAdmin.en-GB.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Lang\ScadaAdmin.ru-RU.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

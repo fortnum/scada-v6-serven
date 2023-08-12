@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Scada.Server.Engine</RootNamespace>
+    <Product>Rapid SCADA</Product>
+    <Company>Rapid Software LLC</Company>
+    <Authors>Mikhail Shiryaev</Authors>
+    <Copyright>Copyright © 2023</Copyright>
+    <Version>6.1.1</Version>
+    <AssemblyVersion>6.1.1.1</AssemblyVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="3.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ScadaServerCommon\ScadaServerCommon.serven.csproj" />
+  </ItemGroup>
+
+</Project>
